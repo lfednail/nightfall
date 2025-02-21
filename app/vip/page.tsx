@@ -5,6 +5,7 @@ import { Tabs } from "@radix-ui/react-tabs";
 import { Button } from "@/components/ui/button"; // Assurez-vous que c'est le bon import
 import { TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
+import FAQ from "@/components/faq";
 
 const vipBenefits = [
   {
@@ -85,9 +86,9 @@ const membershipPackages = {
 
 export default function VipPage() {
   return (
-    <div className="min-h-screen pt-24 pb-12">
+    <div className="min-h-screen pt- pb-16"> {/* Augmenter l'espace du bas */}
       {/* Hero Section */}
-      <div className="relative h-[40vh] mb-16">
+      <div className="relative h-[40vh] mb-20 gap-5"> {/* Augmenter l'espace en bas */}
         <Image
           src="/images/VIP-Experience.png"
           alt="VIP Experience"
@@ -98,7 +99,7 @@ export default function VipPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background"/>
         <div className="relative h-full flex items-center justify-center text-center z-10">
           <div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">VIP Experience</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">VIP Experience</h1> {/* Augmenter l'espace sous le titre */}
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               Elevate your nightlife with exclusive access and premium services
             </p>
@@ -107,16 +108,16 @@ export default function VipPage() {
       </div>
 
       {/* Benefits Grid */}
-      <div className="container mx-auto px-4 mb-16">
-        <h2 className="text-3xl font-bold text-center mb-12">VIP Benefits</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="container mx-auto px-4 mb-36 gap-8"> {/* Augmenter l'espace en bas et l'écart entre les éléments */}
+        <h2 className="text-3xl font-bold text-center mb-16">VIP Benefits</h2> {/* Augmenter l'espace sous le titre */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Augmenter l'écart entre les cartes */}
           {vipBenefits.map((benefit, index) => (
             <Card key={index} className="border-primary/20">
               <CardContent className="pt-6">
-                <div className="rounded-full w-12 h-12 flex items-center justify-center bg-primary/10 text-primary mb-4">
+                <div className="rounded-full w-12 h-12 flex items-center justify-center bg-primary/10 text-primary mb-6"> {/* Augmenter l'espace sous l'icône */}
                   {benefit.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
+                <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3> {/* Augmenter l'espace sous le titre */}
                 <p className="text-muted-foreground">{benefit.description}</p>
               </CardContent>
             </Card>
@@ -125,10 +126,11 @@ export default function VipPage() {
       </div>
 
       {/* Membership Tiers */}
-      <div className="container mx-auto px-4 mb-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Membership Tiers</h2>
+      <div className="container mx-auto px-4 mb-36 gap-16"> {/* Augmenter l'espace en bas et l'écart entre les éléments */}
+        <h2 className="text-3xl font-bold text-center mb-16">Membership Tiers</h2> {/* Augmenter l'espace sous le titre */}
         <Tabs defaultValue="silver" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 max-w-[400px] mx-auto mb-8">
+          <TabsList
+            className="grid w-full grid-cols-3 max-w-[600px] mx-auto mb-16"> {/* Centrer les onglets et augmenter l'écart */}
             <TabsTrigger value="silver">Silver</TabsTrigger>
             <TabsTrigger value="gold">Gold</TabsTrigger>
             <TabsTrigger value="platinum">Platinum</TabsTrigger>
@@ -138,18 +140,18 @@ export default function VipPage() {
               <Card className="max-w-2xl mx-auto border-primary/20">
                 <CardHeader>
                   <CardTitle className="text-center">
-                    <div className="flex items-center justify-center gap-2 mb-4">
+                    <div className="flex items-center justify-center gap-2 mb-6"> {/* Augmenter l'espace sous l'icône */}
                       <Crown className="w-6 h-6 text-primary" />
                       <span>{pack.name} Membership</span>
                     </div>
                     <div className="text-4xl font-bold">
                       ${pack.price.toLocaleString()}
-                      <span className="text-lg text-muted-foreground">/{pack.period}</span>
+                      <span className="text-lg text-muted-foreground ">/{pack.period}</span>
                     </div>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-4 mb-6">
+                  <ul className="space-y-6 gap-6 mb-8"> {/* Augmenter l'espace entre les fonctionnalités */}
                     {pack.features.map((feature, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <Sparkles className="w-4 h-4 text-primary" />
@@ -168,9 +170,10 @@ export default function VipPage() {
       </div>
 
       {/* Contact Section */}
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-2xl font-semibold mb-4">Need More Information?</h2>
-        <p className="text-muted-foreground mb-6">
+      <FAQ/>
+      <div className="container mx-auto px-4 text-center mb-24"> {/* Augmenter l'espace en bas */}
+        <h2 className="text-2xl font-semibold mb-6">Need More Information?</h2> {/* Augmenter l'espace sous le titre */}
+        <p className="text-muted-foreground mb-8">
           Contact our VIP concierge for personalized assistance
         </p>
         <Button variant="outline" size="lg" asChild>
