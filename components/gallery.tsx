@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { galleryImages, GalleryImage } from '@/data/gallery';
+import Image from "next/image";
 
 const Gallery: React.FC = () => {
   return (
@@ -10,9 +11,11 @@ const Gallery: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-0 p-4">
           {galleryImages.events.map((image: GalleryImage, index: number) => (
             <div key={index} className="relative group">
-              <img
+              <Image
                 src={image.src}
                 alt={`Event image ${index + 1}`}
+                width={1920}
+                height={1080}
                 className="object-cover w-full h-100 transition-transform duration-500 group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
