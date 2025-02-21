@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# L'Echafee - Premium Nightclub Experience
 
-## Getting Started
+Bienvenue à **L'Echafee**, où la musique rencontre le luxe. Découvrez l'expérience ultime de la vie nocturne avec des systèmes sonores de pointe, des salons VIP exclusifs et un jardin sur le toit offrant une vue panoramique sur la ville. Notre établissement est conçu pour offrir une expérience immersive et inoubliable aux amateurs de musique et de nightlife.
 
-First, run the development server:
+## 🎵 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **🔊 Son de Classe Mondiale** : Systèmes sonores de pointe offrant un son cristallin.
+- **🥂 Expérience VIP** : Espaces exclusifs avec un service premium et des loges privées.
+- **🌇 Jardin sur le Toit** : Terrasse en plein air avec vue panoramique et ambiance chill.
+- **🎶 Événements Curatés** : Programmation régulière avec des DJs internationaux et la meilleure musique électronique.
+- **💎 Programme de Membership** : Accès Silver, Gold et Platinum avec des avantages exclusifs.
+- **📱 Design Réactif** : Site entièrement responsive pour une navigation optimale sur tous les appareils.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Technologies Utilisées
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Ce projet est construit avec les technologies modernes suivantes :
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js** : Framework React pour des applications rendues côté serveur et statiques.
+- **Tailwind CSS** : Framework CSS utility-first pour un développement rapide d'interface.
+- **shadcn/ui** : Bibliothèque de composants UI accessibles et personnalisables.
+- **Lucide React** : Bibliothèque d'icônes modernes pour React.
+- **React Hook Form** : Gestion des formulaires de manière efficace et performante.
+- **Embla Carousel** : Bibliothèque légère pour des carrousels interactifs.
+- **Recharts** : Librairie de graphiques réactifs et performants.
+- **Sonner** : Librairie de notifications toast pour React.
 
-## Learn More
+## 🚀 Installation et Lancement
 
-To learn more about Next.js, take a look at the following resources:
+### Prérequis
+- Node.js (v18 ou supérieur)
+- npm ou yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Cloner le dépôt** :
+   ```sh
+   git clone https://github.com/lfednail/nightfall.git
+   cd nightfall
+   ```
 
-## Deploy on Vercel
+2. **Installer les dépendances** :
+   ```sh
+   npm install
+   # ou
+   yarn install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Lancer l'application en développement** :
+   ```sh
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+L'application sera accessible sur `http://localhost:3000`.
+
+## 📜 Licence
+
+Ce projet est sous licence MIT. Consultez le fichier `LICENSE` pour plus de détails.
+
+---
+
+💎 **L'Echafee - Where Music Meets Luxury** 💎
+
