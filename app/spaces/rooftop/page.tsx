@@ -100,9 +100,11 @@ export default function RooftopPage() {
             <Card key={index} className="overflow-hidden group">
               <CardContent className="p-0">
                 <div className="relative aspect-video">
-                  <img
+                  <Image
                     src={image}
                     alt={`Rooftop View ${index + 1}`}
+                    width={1920}
+                    height={1080}
                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
