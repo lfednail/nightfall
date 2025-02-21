@@ -76,7 +76,7 @@ export default function Navigation() {
                           href="/about"
                         >
                           <Image
-                              src="/images/logo-echafee.png"
+                              src="/images/logo/logo-echafee.png"
                               alt="Echafée Nightclub"
                               className="mx-2 py-2 h-50 w-auto"
                               width={150}
