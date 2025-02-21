@@ -52,7 +52,7 @@ export default function Navigation() {
       <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center space-x-2 mr-6 ml-6">
           <Image
-            src="/images/logo-echafee.png"
+            src="/images/logo/logo-echafee.png"
             alt="Echafée Nightclub"
             className="mx-2 py-2 h-16 w-auto"
             width={60}
