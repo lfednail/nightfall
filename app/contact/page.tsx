@@ -15,7 +15,7 @@ export default function ContactPage() {
       <div className="relative h-[40vh] mb-16">
         <Image
           src="/images/contact.png"
-          alt="VIP Experience"
+          alt="Contact Us"
           width={1920} // Remplacez par la largeur de votre image
           height={1080} // Remplacez par la hauteur de votre image
           className="absolute inset-0 w-full h-full object-cover"

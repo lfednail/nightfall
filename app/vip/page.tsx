@@ -90,7 +90,7 @@ export default function VipPage() {
       {/* Hero Section */}
       <div className="relative h-[40vh] mb-20 gap-5"> {/* Augmenter l'espace en bas */}
         <Image
-          src="/images/VIP-Experience.png"
+          src="/images/background/VIP-Experience.png"
           alt="VIP Experience"
           width={1920} // Remplacez par la largeur de votre image
           height={1080} // Remplacez par la hauteur de votre image
