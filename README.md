@@ -11,6 +11,9 @@ Bienvenue à **L'Echafee**, où la musique rencontre le luxe. Découvrez l'expé
 - **💎 Programme de Membership** : Accès Silver, Gold et Platinum avec des avantages exclusifs.
 - **📱 Design Réactif** : Site entièrement responsive pour une navigation optimale sur tous les appareils.
 
+
+![image](https://github.com/user-attachments/assets/bd844051-1cc9-46de-bafc-f25c3c05fd10)
+
 ## 🛠 Technologies Utilisées
 
 Ce projet est construit avec les technologies modernes suivantes :
