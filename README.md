@@ -12,7 +12,8 @@ Bienvenue à **L'Echafee**, où la musique rencontre le luxe. Découvrez l'expé
 - **📱 Design Réactif** : Site entièrement responsive pour une navigation optimale sur tous les appareils.
 
 
-![image](https://github.com/user-attachments/assets/bd844051-1cc9-46de-bafc-f25c3c05fd10)
+![image](https://github.com/user-attachments/assets/2c975da8-b80c-4db6-b5c0-e792efe1c715)
+
 
 ## 🛠 Technologies Utilisées
 
